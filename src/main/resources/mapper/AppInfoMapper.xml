@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="generator.mapper.AppInfoMapper">
+
+    <resultMap id="BaseResultMap" type="generator.domain.AppInfo">
+            <id property="id" column="id" jdbcType="BIGINT"/>
+            <result property="softwarename" column="softwareName" jdbcType="VARCHAR"/>
+            <result property="apkname" column="APKName" jdbcType="VARCHAR"/>
+            <result property="supportrom" column="supportROM" jdbcType="VARCHAR"/>
+            <result property="interfacelanguage" column="interfaceLanguage" jdbcType="VARCHAR"/>
+            <result property="softwaresize" column="softwareSize" jdbcType="DECIMAL"/>
+            <result property="updatedate" column="updateDate" jdbcType="DATE"/>
+            <result property="devid" column="devId" jdbcType="BIGINT"/>
+            <result property="appinfo" column="appInfo" jdbcType="VARCHAR"/>
+            <result property="status" column="status" jdbcType="BIGINT"/>
+            <result property="onsaledate" column="onSaleDate" jdbcType="TIMESTAMP"/>
+            <result property="offsaledate" column="offSaleDate" jdbcType="TIMESTAMP"/>
+            <result property="flatformid" column="flatformId" jdbcType="BIGINT"/>
+            <result property="categorylevel3" column="categoryLevel3" jdbcType="BIGINT"/>
+            <result property="downloads" column="downloads" jdbcType="BIGINT"/>
+            <result property="createdby" column="createdBy" jdbcType="BIGINT"/>
+            <result property="creationdate" column="creationDate" jdbcType="TIMESTAMP"/>
+            <result property="modifyby" column="modifyBy" jdbcType="BIGINT"/>
+            <result property="modifydate" column="modifyDate" jdbcType="TIMESTAMP"/>
+            <result property="categorylevel1" column="categoryLevel1" jdbcType="BIGINT"/>
+            <result property="categorylevel2" column="categoryLevel2" jdbcType="BIGINT"/>
+            <result property="logopicpath" column="logoPicPath" jdbcType="VARCHAR"/>
+            <result property="logolocpath" column="logoLocPath" jdbcType="VARCHAR"/>
+            <result property="versionid" column="versionId" jdbcType="BIGINT"/>
+    </resultMap>
+
+    <sql id="Base_Column_List">
+        id,softwareName,APKName,
+        supportROM,interfaceLanguage,softwareSize,
+        updateDate,devId,appInfo,
+        status,onSaleDate,offSaleDate,
+        flatformId,categoryLevel3,downloads,
+        createdBy,creationDate,modifyBy,
+        modifyDate,categoryLevel1,categoryLevel2,
+        logoPicPath,logoLocPath,versionId
+    </sql>
+</mapper>
